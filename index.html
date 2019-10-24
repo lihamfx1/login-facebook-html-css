@@ -1,55 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
-      rel="stylesheet"
-    />
-    <link media="all" type="text/css" rel="stylesheet" href="index.css" />
-    <title>HTML & CSS layouting</title>
-  </head>
-  <body>
-    <header>
-      <a href="#">Libertianas</a>
-    </header>
 
-    <div class="conatiner">
-      <div id="content">
-        <h1>Down with the state</h1>
-        <p>Abandon the left vs right paradim and adopt new ideals</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" />
+  <link media="all" type="text/css" rel="stylesheet" href="index.css" />
+  <title>HTML & CSS layouting</title>
+</head>
+
+<body>
+  <header>
+    <!-- <a href="#">Libertianas</a> -->
+    <img src="logofb.png" alt="Home page" title="Home page">
+    <table class="signin">
+      <tbody>
+        <tr>
+          <td>
+            <label for="email">Email or Phone</label>
+          </td>
+          <td>
+            <label for="pass">Password</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text">
+          </td>
+          <td>
+            <input type="password">
+          </td>
+          <td>
+            <a href="https://m.facebook.com"><button class="btn-login" type="submit">Log In</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">Forgotten password?</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <section class="container">
+    <main>
+      <!-- <h3>Facebook</h3> -->
+      <!-- <img src="OBaVg52wtTZ.png" alt="Nature" class=".logo_0" width="600" height="400"> -->
+    </main>
+    <aside>
+      <div class="r_0">
+        <h2>Create an account</h2>
+        <p>It's quick and easy</p>
+        <div class="register">
+          <div class="clearfix form_register">
+            <div class="rg_0">
+              <span class="inputtext_0">
+                <input type="text" class="i_0" placeholder="First name" required>
+                <input type="text" class="i_1" placeholder="Last name" required> <br>
+              </span><br>
+            </div>
+            <div class="rg_1">
+              <span class="inputtext_1">
+                <input type="text" class="i_3" placeholder="Mobile number or email address" required><br>
+              </span><br>
+            </div>
+            <!-- <span>
+            <label>Re-enter email address</label><br>
+            <input aria-hidden="true" type="text" class="r_0" placeholder="Re-enter email address" required>
+          </span><br>
+          <span> -->
+            <!-- <label>Mobile number</label><br>
+            <input aria-hidden="true" type="text" class="r_0" placeholder="Mobile number" required>
+          </span><br>-->
+            <div class="rg_2">
+              <span class="inputpass">
+                <input type="password" class="i_4" placeholder="New password" required><br>
+              </span><br>
+            </div>
+          </div>
+          <div class="birthday">
+            <label for="birthday">Birthday</label><br>
+            <div class="b_0">
+              <span>
+                <select aria-label="day" name="birthday_day" id="day">
+                  <option value="o">Day</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+              </span>
+              <span>
+                <select aria-label="month" name="birthday_month" id="month">
+                  <option value="0">Month</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </span>
+              <span>
+                <select aria-label="year" name="birthday_year" id="year">
+                  <option value="0">Year</option>
+                  <option value="1">1998</option>
+                  <option value="2">1999</option>
+                  <option value="3">2000</option>
+                  <option value="4">2001</option>
+                  <option value="5">2002</option>
+                  <option value="6">2003</option>
+                  <option value="7">2004</option>
+                  <option value="8">2005</option>
+                  <option value="9">2006</option>
+                  <option value="10">2007</option>
+                  <option value="11">2008</option>
+                  <option value="12">2009</option>
+                  <option value="13">2010</option>
+                  <option value="14">2011</option>
+                  <option value="15">2012</option>
+                  <option value="16">2013</option>
+                  <option value="17">2014</option>
+                  <option value="18">2015</option>
+                  <option value="19">2016</option>
+                  <option value="20">2017</option>
+                  <option value="21">2018</option>
+                  <option value="22">2019</option>
+                  <option value="23">2020</option>
+                  <option value="24">2021</option>
+                  <option value="25">2022</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div class="gender">
+            <div class="g_0">
+              <span class="g_1">
+                <label for="gender">Gender</label><br>
+              </span>
+              <span>
+                <input type="radio" class="g_0" name="gender">
+                <label for="male">Male</label>
+              </span>
+              <span>
+                <input type="radio" class="g_0" name="gender">
+                <label for="female">Female</label>
+              </span>
+              <span>
+                <input type="radio" class="g_0" name="gender">
+                <label for="custom">Custom</label>
+                <!-- <div>
+                  <select name="pronoun" id="pronoun">
+                    <option value="0">Select your pronoun</option>
+                    <option value="1">She: "Wish her a happy birthday!"</option>
+                    <option value="2">He: "Wish him a happy birthday"</option>
+                    <option value="3">They: "Wish them a happy birthday"</option>
+                  </select>
+                  <p>Your pronoun is visible to everyone</p>
+                  <p>Gender(optional) <br>
+                    <input type="text" name="gender_optional" placeholder="Gender (optional)">
+                  </p>
+                </div> -->
+                <div class="lisense">
+                  <p>By clicking Sing Up, your agree to our <a href="">Terms, <a href="">and
+                        Cookie
+                        Policy<a href="Cookie Policy">. </a>You may receive SMS
+                        notifications
+                        from
+                        us and
+                        can opt out at any time.</a></a></p>
+                </div>
+              </span><br>
+            </div>
+          </div>
+          <div class="signup">
+            <button type="submit">Sign Up</button>
+          </div>
+          <div class="cp_0">
+            <p><a href="">Create a Page</a> for a celebrity, band or business.</p>
+          </div>
+        </div>
       </div>
-      <img src="img/logo.png" alt="Eagle logo" title="Eagle logo" />
+
+    </aside>
+
+    <!-- <div id="content">
+      <h1>Down with the state</h1>
+      <p>Abandon the left vs right paradim and adopt new ideals</p>
     </div>
+    <img src="OBaVg52wtTZ.png" alt="Eagle logo" title="Eagle logo" /> -->
+  </section>
+  <footer>
+    <ul>
+      <li>
+        <ul class="f_0">
+          <li class="f_01"><a href="">English (UK)</a></li>
+          <li class="f_01"><a href="">Bahasa Indonesia</a></li>
+          <li class="f_01"><a href="">Bahasa Jawa</a></li>
+          <li class="f_01"><a href="">Bahasa Melayu</a></li>
+          <li class="f_01"><a href="">Bahasa Jepang</a></li>
+          <li class="f_01"><a href="">Bahasa Arab</a></li>
+          <li class="f_01"><a href="">Bahasa Perancis</a></li>
+          <li class="f_01"><a href="">Bahasa Spanyol</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="f_1">
+          <li class="f_01"><a href="">Sign Up</a></li>
+          <li class="f_01"><a href="">Log In</a></li>
+          <li class="f_01"><a href="">Messenger</a></li>
+          <li class="f_01"><a href="">Facebook Lite</a></li>
+          <li class="f_01"><a href="">People</a></li>
+          <li class="f_01"><a href="">Categories</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="f_2">
+          <li>
+            <p>Facebook &copy; 2019</p>
+          </li>
+        </ul>
+      </li>
 
-    <footer>
-      <ul>
-        <li>
-          <span>But what about the roads?</span>
-          You just don't understand economics, like supply and demand. Don't
-          worry kiddo, where there's a demand there will be a supply; we'll all
-          have our roads.
-        </li>
-        <li>
-          <span>Is taxation theft></span>
-          If I came to your house with some heavily armed buddies, demanded that
-          you and your neighbors give me a percentage of your income, in return
-          for some crappy monopolized services that you didn't ask for, would
-          you consider that theft?
-        </li>
-        <li>
-          <span>So, what you are saying, ......</span>
-          Libertarians want to live in a world where gay couples can protect
-          their poppy fields with fully automatic weapons. A world where
-          voluntaryism and property rights are treated with the highest respect.
-        </li>
+      <li>....</li>
+      <li>....</li>
+      <li>....</li>
+    </ul>
+  </footer>
 
-        <li>....</li>
-        <li>....</li>
-        <li>....</li>
-      </ul>
-    </footer>
-  </body>
+  <!-- <div class="container">
+      <div id="content">
+
+      </div>
+      
+    </div> -->
+
+
+</body>
+
 </html>
